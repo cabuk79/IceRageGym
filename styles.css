@@ -16,6 +16,7 @@ body {
     color: var(--paragraph-color);
     font-family: var(--font-family);   
     margin: 0;
+    padding: 0;
 }
 
 body h1, h2, h3, h4, h5, h6 {
@@ -44,11 +45,12 @@ body button {
     align-items: center;
     padding: 10px 20px;
     background-color: var(--card-background-color);
-    position:-webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     overflow: hidden;
     margin: auto;
+    width: auto;
 }
 
 .logo-container {
@@ -196,10 +198,10 @@ nav li:hover {
 .information-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 1em;
     padding: 50px 20px;
-    width: 70%;
+    width: auto;
     margin: auto;
     row-gap: 1em;   
     flex-wrap: wrap;
@@ -554,3 +556,52 @@ footer {
 }
 
 /* End of footer section */
+
+
+/* Media queries */
+@media (max-width: 600px)
+{
+    body {
+        font-size: 0.8em;
+    }
+    
+    p {
+        font-size: 0.9em;
+    }
+
+    .hero-container {
+        width: 300px;
+        padding: 20px 10px;
+    }
+
+    .nav-btn-container{
+        display: none;
+    }
+
+    .hero-header {
+        font-size: 1em;
+        width: 100%;
+    } 
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;     
+    }
+
+    .contact-information-container {
+        width: 90%;
+        margin: auto;
+        padding: 1em;     
+    }
+    
+    
+
+    .contact-form-container {
+        width: 90%;
+        margin: auto;
+        padding: 1em;
+    }
+
+    
+}
