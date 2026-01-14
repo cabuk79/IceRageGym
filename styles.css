@@ -34,6 +34,8 @@ body button {
 
 .material-icons {
     color: var(--logo-hightlght-color);
+    width: 30px;
+    height: 30px;
 }
 
 /* End of glogbal styling */
@@ -221,10 +223,9 @@ nav li:hover {
 }
 
 .info-icon {
-    width: 30px;
-    height: 30px;
     background-color: var(--card-background-color);
-    padding: 0.5em;
+    color: var(--logo-hightlght-color);
+    padding: 1.5em;
     align-items: center;
     justify-items: center;
     border-radius: 20px;
