@@ -15,8 +15,8 @@
     <div class="nav-container">
         <header>
             <div class="logo-container">
-                <span class="material-icons logo-icon">
-                    fitness_center
+                <span class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-barbell"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 12h1" /><path d="M6 8h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2" /><path d="M6 7v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-10a1 1 0 0 0 -1 -1h-1a1 1 0 0 0 -1 1" /><path d="M9 12h6" /><path d="M15 7v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-10a1 1 0 0 0 -1 -1h-1a1 1 0 0 0 -1 1" /><path d="M18 8h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2" /><path d="M22 12h-1" /></svg>
                 </span> <!-- end of material-icons and logo-icon -->
                 <div class="logo-text-container">
                     <span class="logo-text-begin">
@@ -32,15 +32,15 @@
         <div class="nav-btn-container">
             <nav>
                 <ul>
-                    <li>ABOUT ABAID</li>
-                    <li>THE GYM</li>
-                    <li>GALLERY</li>
-                    <li>SHOP</li>
+                    <li><a href="#about">ABOUT ABAID</li></a>
+                    <li><a href="#thegym">THE GYM</li></a>
+                    <li><a href="#gallery">GALLERY</li></a>
+                    <li><a href="https://www.icebergsupplements.com" target="_blank">SHOP</li></a>
                 </ul>
             </nav>
 
             <div class="enquire-btn-container">
-                <button class="enquire-btn">ENQUIRE NOW</button>
+                <a href="#enquire" class="enquire-btn">ENQUIRE NOW</a>
             </div>
         </div>   
     </div> <!-- end of nav-container -->
@@ -130,7 +130,7 @@
         </section> <!-- end of information-container -->
 
         <!-- Abiad section -->
-        <section class="abaid-section">
+        <section class="abaid-section" id="about">
             <div class="abaid-section__inner">
                 <div class="abaid-picture">
                     <img src="/images/ice.jpg" alt="Abaid Akhtar Hussain">
@@ -145,7 +145,7 @@
         </section> <!-- end of abaid-section -->
 
         <!-- facility information section -->
-         <section class="facility-info">
+         <section class="facility-info" id="thegym">
             <div class="facility-header">
                 <h1>OLD SCHOOL <span class="ice-rage">PRIVATE FACILITY</span></h1>
                 <p>Ice Rage is built for purpose.  We've curated the perfect enviornment with high-end equipment meant for learning, not just posing.</p>
@@ -191,7 +191,7 @@
          </section> <!-- end of facility-info -->
 
         <!-- gym pictures section -->
-        <section class="gym-pictures-section">
+        <section class="gym-pictures-section" id="gallery">
             <div class="gym-picture-one">
                 <img src="images/gymone.jpg">
             </div> <!-- end of gym-picture-card -->
@@ -270,7 +270,7 @@
 
             </div> <!-- end of contact-information -->
 
-            <div class="contact-form-container">
+            <div class="contact-form-container" id="enquire">
                 <form class="contact-form">
                     <label>FULL NAME</label>
                     <input type="text" name="name" placeholder="John Doe" required>

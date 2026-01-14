@@ -71,6 +71,12 @@ body button {
     font-style: italic;
 }
 
+.logo-icon {
+    color: var(--logo-hightlght-color);
+    transform: scale(1.5);
+    margin-right: 5px;
+}
+
 .logo-text-end {
     color: var(--logo-hightlght-color);    
 }
@@ -95,13 +101,29 @@ nav ul {
     list-style: none;
 }
 
-nav li {
-    cursor: pointer;   
+nav li, nav a {
+    cursor: pointer; 
+    text-decoration: none;
+    color: var(--paragraph-color);  
 }
 
-nav li:hover {
+nav a:hover {
     color: var(--logo-hightlght-color);
     transition: var(--hover-transition-duration);
+}
+
+.enquire-btn-container {
+    background-color: var(--buttons-color);
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 10px;
+    
+}
+
+.enquire-btn {
+    text-decoration: none;
+    color: var(--header-color);
+
 }
 
 /* End of navigation header styling */
