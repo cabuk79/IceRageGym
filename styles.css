@@ -619,6 +619,16 @@ footer {
     margin: 0;
 }
 
+.footer-nav ul li a {
+    text-decoration: none;
+    color: var(--paragraph-color);
+}
+
+.footer-nav a:hover {
+    color: var(--logo-hightlght-color);
+    transition: var(--hover-transition-duration);
+}
+
 .copy-style {
     font-size: 0.8em;
 }
@@ -652,6 +662,89 @@ body.thanks-page .nav-container {
     align-items: center;    
     justify-content: center;
     width: 100%;
+}
+
+
+/* Private policy section */
+/* --- PRIVACY POLICY PAGE STYLES --- */
+
+/* Base setup for the privacy page to match Gym aesthetic */
+body.privacy-page {
+    background-color: #111; /* Dark background */
+    color: #e0e0e0;         /* Off-white text for readability */
+    font-family: 'Roboto', sans-serif; /* Or your gym's main font */
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container to center content and stop it hitting the edges */
+.privacy-container {
+    max-width: 800px;
+    margin: 60px auto; /* 60px top/bottom margin */
+    padding: 40px;
+    background-color: #1a1a1a; /* Slightly lighter dark box */
+    border: 1px solid #333;
+    border-radius: 8px; /* Soft corners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* Drop shadow */
+}
+
+/* Headings */
+.privacy-container h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0; /* Underline */
+    padding-bottom: 15px;
+}
+
+.privacy-container h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+.privacy-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #ccc;
+}
+
+.privacy-container li {
+    margin-bottom: 8px;
+}
+
+/* Links */
+.privacy-container a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.privacy-container a:hover {
+    color: #bbb; /* Slight fade on hover */
+    text-decoration: none;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #000 !important; /* Force text black */
+    text-decoration: none !important;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.back-btn:hover {
+    background-color: #ddd;
+    transform: translateY(-2px); /* Slight lift effect */
 }
 
 
