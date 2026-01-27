@@ -1,4 +1,5 @@
 
+
 <html lang="en">
     
 <head>
@@ -32,10 +33,10 @@
         <div class="nav-btn-container">
             <nav>
                 <ul>
-                    <li><a href="#about">ABOUT ABAID</li></a>
-                    <li><a href="#thegym">THE GYM</li></a>
-                    <li><a href="#gallery">GALLERY</li></a>
-                    <li><a href="https://www.icebergsupplements.com" target="_blank">SHOP</li></a>
+                    <li><a href="#about">ABOUT ABAID</a></li>
+                    <li><a href="#thegym">THE GYM</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="https://www.icebergsupplements.com" target="_blank">SHOP</a></li>
                 </ul>
             </nav>
 
@@ -133,7 +134,7 @@
         <section class="abaid-section" id="about">
             <div class="abaid-section__inner">
                 <div class="abaid-picture">
-                    <img src="/images/ice.jpg" alt="Abaid Akhtar Hussain">
+                    <img src="images/ice.jpg" alt="Abaid Akhtar Hussain">
                 </div> <!-- end of abaid-picture -->
                 <div class="about-text">
                     <h4>THE MIND BEHIND <span class="ice-rage">ICE RAGE</span></h4>
@@ -271,12 +272,16 @@
             </div> <!-- end of contact-information -->
 
             <div class="contact-form-container" id="enquire">
-                <form class="contact-form">
+                <form class="contact-form" action="https://formsubmit.co/cabuk79@googlemail.com" method="POST">
+
+                    <input type="hidden" name="_subject" value="New Personal Training Enquiry!">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+
                     <label>FULL NAME</label>
                     <input type="text" name="name" placeholder="John Doe" required>
 
                     <label>PHONE NUMBER</label>
-                    <input type="tel" name="phone" placeholder="01282 709819" required>
+                    <input type="tel" name="phone" placeholder="01282 709819">
 
                     <label>EMAIL ADDRESS</label>
                     <input type="email" name="email" placeholder="john.doe@email.com" required>
