@@ -83,16 +83,28 @@ app-header {
     line-height: 0.9em;
     font-weight: 900;
     font-style: italic;
+    text-decoration: none;
+}
+
+.logo-text-container a {
+    text-decoration: none;
 }
 
 .logo-icon {
     color: var(--logo-hightlght-color);
     transform: scale(1.5);
     margin-right: 5px;
+    text-decoration: none;
+}
+
+.logo-text-begin {
+    color: var(--header-color); 
+    text-decoration: none;   
 }
 
 .logo-text-end {
-    color: var(--logo-hightlght-color);    
+    color: var(--logo-hightlght-color); 
+    text-decoration: none;   
 }
 
 .nav-btn-container {
@@ -221,7 +233,16 @@ nav a:hover {
  .get-started-btn {  
     padding: 1em;
     font-size: 1.2em;
+    border: none;
+    background-color: var(--buttons-color);
+    color: var(--header-color);
+    text-decoration: none;
+    border-radius: 20px;
  }
+    .get-started-btn:hover {
+        background-color: var(--logo-hightlght-color);
+        transition: var(--hover-transition-duration);
+    }
 
  .cost-frequencey {
     font-size: 0.7em;
@@ -474,13 +495,15 @@ nav a:hover {
     margin-top: 3em;
 }
 
-.session-container button {
+.session-container a {
     background-color: var(--header-color);
     color: var(--logo-hightlght-color);
     padding: 1em 2em;
     font-size: 1.2em;
     font-weight: 700;
     border: 10px;
+    border-radius: 20px;
+    text-decoration: none;
 }
 
 .session-header {
